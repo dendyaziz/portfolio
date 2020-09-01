@@ -1,5 +1,5 @@
 <template>
-    <b-button icon-left="bars" v-if="$isMobile()" class="mb-5" size="is-medium"
+    <b-button icon-left="bars" v-if="$isMobile() && $auth.check()" class="mb-5" size="is-medium"
               @click.prevent="$emit('input', !value)"></b-button>
 </template>
 <script>

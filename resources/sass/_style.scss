@@ -105,8 +105,8 @@ body {
   margin-bottom: 3rem !important;
 }
 
-.title h1 {
-  font-weight: 500;
+.title h2 {
+  font-weight: 600;
 }
 
 .title .buttons .button {
@@ -122,6 +122,33 @@ body {
 .title .column:last-child .buttons {
   margin-right: -0.65rem !important;
   margin-left: 0.5rem;
+}
+
+
+/* Text Heading */
+
+h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.55;
 }
 
 
@@ -148,6 +175,10 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
 }
 
 @media screen and (max-width: 600px) {
+  html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+    padding-top: 3.25rem;
+  }
+
   .navbar-item {
     padding-left: 2rem;
   }
@@ -536,4 +567,11 @@ p {
 
 a:hover, a:focus {
   text-decoration: none;
+}
+
+
+/* Font */
+
+.font-default {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

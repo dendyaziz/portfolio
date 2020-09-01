@@ -4,11 +4,9 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-//@import '~bootstrap/scss/bootstrap';
-
 // Custom
-@import 'style';
+@import 'buefy';
 @import 'grid';
+@import 'style';
 
 @import '~@mdi/font/css/materialdesignicons.css';

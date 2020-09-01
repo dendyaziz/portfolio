@@ -2,7 +2,7 @@
     <b-navbar wrapper-class="container" shadow fixed-top>
         <template slot="brand">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <span class="point">Dendy</span>
+                <span class="point has-tex">Dendy</span>
             </b-navbar-item>
         </template>
         <template slot="end">

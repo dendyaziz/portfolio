@@ -2,13 +2,8 @@
     <section>
         <Navbar/>
         <div class="container">
-            <div class="title columns is-gapless is-mobile">
-                <div class="column">
-                    <h1>Home</h1>
-                </div>
-            </div>
-            <h2 class="subtitle w-max-500">Home is front page of the <strong>Administration UI</strong>.
-                It also provides some user and game information.</h2>
+            <h1 class="has-text-weight-semibold mb-2">I am <span class="point">Dendy Armandiaz</span></h1>
+            <h4>I am a Front-end Developer located in Bekasi, Indonesia. I recently work as a freelance Remote Web Developer for Telkom University, located in Bandung. I am looking to collaborate with you as a Front-end Developer.</h4>
             <br>
             <br>
             <br>

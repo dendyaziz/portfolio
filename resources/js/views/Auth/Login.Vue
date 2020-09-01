@@ -7,7 +7,7 @@
                         <div class="mb-5 mt-4">
                             <div class="columns is-centered is-gapless">
                                 <div class="column is-narrow">
-                                    <h1><b>Login</b></h1>
+                                    <h1 class="font-default"><b>Login</b></h1>
                                 </div>
                             </div>
                             <b-message v-if="hasError" type="is-danger">

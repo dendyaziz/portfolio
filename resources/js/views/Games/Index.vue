@@ -4,7 +4,7 @@
             <breadcrumb></breadcrumb>
             <div class="title columns is-gapless is-mobile">
                 <div class="column is-narrow">
-                    <h1>Games</h1>
+                    <h2>Games</h2>
                 </div>
                 <div class="column my-n2">
                     <div class="buttons ml-1">
