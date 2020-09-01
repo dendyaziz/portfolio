@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="column has-text-centered">
-                    <img src="https://i.ibb.co/TM1SMVZ/Profile-Picture.png" class="profile-picture image-fit" alt="Profile Picture">
+                    <img src="https://i.ibb.co/N9Hxzdn/Profile-Picture.png" class="profile-picture image-fit" alt="Profile Picture">
                 </div>
             </div>
             <br>
