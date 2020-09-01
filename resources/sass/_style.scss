@@ -1,5 +1,5 @@
 html {
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -9,119 +9,34 @@ body {
 
 /* Sidebar */
 
-.b-sidebar .sidebar-content.is-mini {
-  width: 4.5rem;
+.b-sidebar {
+  width: 326px;
+}
+
+.sidebar-page .sidebar-layout {
+  display: flex;
+  flex-direction: row;
 }
 
 .b-sidebar .sidebar-content.is-dark {
   background-color: #2b2b2b;
 }
 
-@media screen and (max-width: 1023px) {
-  .b-sidebar .sidebar-content.is-mini-mobile {
-    width: 4.5rem;
-  }
-
-  .b-sidebar .sidebar-content.is-mini-mobile .menu-label {
-    display: none;
-  }
-
-  .b-sidebar .sidebar-content.is-mini-mobile .menu-title {
-    display: none;
-  }
+.b-sidebar .sidebar-background {
+  background: rgba(10, 10, 10, 0.50);
 }
 
-
-.sidebar-page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  //min-height: 100%;
-  height: 100vh;
-
-  .sidebar-layout {
-    display: flex;
-    flex-direction: row;
-    //min-height: 100%;
-    height: 100vh;
-
-    .sidebar-content {
-      //min-height: 100%;
-      min-height: 100vh;
-    }
-  }
-}
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 600px) {
   .b-sidebar {
-    .sidebar-content {
-      &.is-mini-mobile {
-        &:not(.is-mini-expand),
-        &.is-mini-expand:not(:hover) {
-          .menu-list {
-            li {
-              a {
-                span:nth-child(2) {
-                  display: none;
-                }
-              }
-
-              ul {
-                padding-left: 0;
-
-                li {
-                  a {
-                    display: inline-block;
-                  }
-                }
-              }
-            }
-          }
-
-          .menu-label:not(:last-child) {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
+    width: 0;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .b-sidebar {
-    .sidebar-content {
-      &.is-mini {
-        &:not(.is-mini-expand),
-        &.is-mini-expand:not(:hover) {
-          .menu-list {
-            li {
-              a {
-                span:nth-child(2) {
-                  display: none;
-                }
-              }
-
-              ul {
-                padding-left: 0;
-
-                li {
-                  a {
-                    display: inline-block;
-                  }
-                }
-              }
-            }
-          }
-
-          .menu-label:not(:last-child) {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
+@media screen and (min-width: 600px) {
+  .b-sidebar .sidebar-content {
+    position: fixed !important;
   }
 }
-
 
 /* Menu */
 
@@ -187,17 +102,11 @@ body {
 /* Header */
 
 .title {
-  margin-bottom: 2rem !important;
+  margin-bottom: 3rem !important;
 }
 
-
-/* Page Content */
-
-.page-content {
-  overflow-y: auto;
-  background-color: white;
-  width: 100%;
-  padding: 3rem 2rem;
+.title h1 {
+  font-weight: 500;
 }
 
 .title .buttons .button {
@@ -213,6 +122,57 @@ body {
 .title .column:last-child .buttons {
   margin-right: -0.65rem !important;
   margin-left: 0.5rem;
+}
+
+
+/* Navbar */
+
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+  padding-top: 5.25rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    height: 5.25rem;
+  }
+
+  .navbar-brand {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-item {
+    padding-left: 2rem;
+  }
+}
+
+.navbar-menu {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+/* Page Content */
+
+.page-content {
+  overflow-y: auto;
+  background-color: white;
+  width: 100%;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .page-content {
+    padding: 2rem;
+  }
 }
 
 
@@ -447,7 +407,7 @@ audio {
 }
 
 .button:hover .has-text-grey-lighter {
-  color: #B5B5B5!important;
+  color: #B5B5B5 !important;
 }
 
 /* Loading */
@@ -561,4 +521,19 @@ p {
 
 .rotate-n90 {
   transform: rotate(-90deg);
+}
+
+
+/* Trailer */
+
+.point:after {
+  content: '.';
+  color: #3333ff;
+}
+
+
+/* Link */
+
+a:hover, a:focus {
+  text-decoration: none;
 }

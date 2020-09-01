@@ -1,15 +1,14 @@
 <template>
     <section>
+        <Navbar/>
         <div class="container">
-            <breadcrumb></breadcrumb>
             <div class="title columns is-gapless is-mobile">
                 <div class="column">
-                    <h1>Dashboard</h1>
+                    <h1>Home</h1>
                 </div>
             </div>
-            <h2 class="subtitle w-max-500">Dashboard is front page of the <strong>Administration UI</strong>.
+            <h2 class="subtitle w-max-500">Home is front page of the <strong>Administration UI</strong>.
                 It also provides some user and game information.</h2>
-            <br>
             <br>
             <br>
             <br>
@@ -112,11 +111,13 @@
     </section>
 </template>
 <script>
-    export default {
-        data() {
-            return {
 
-            }
+    import Navbar from "../layouts/Navbar";
+
+    export default {
+        components: {Navbar},
+        data() {
+            return {}
         }
     }
 </script>

@@ -6,7 +6,7 @@
                 <div class="column is-narrow">
                     <h1>Games</h1>
                 </div>
-                <div class="column mt-n1">
+                <div class="column my-n2">
                     <div class="buttons ml-1">
                         <b-tooltip label="Refresh" type="is-dark">
                             <b-button type="is-text" size="is-large" class="px-2" @click.prevent="load">
@@ -15,7 +15,7 @@
                         </b-tooltip>
                     </div>
                 </div>
-                <div class="column is-narrow mt-n1">
+                <div class="column is-narrow my-n2">
                     <div class="buttons">
                         <b-tooltip :label="searchable ? 'Cancel' : 'Search'" type="is-dark">
                             <b-button type="is-text" size="is-large" @click="searchable = !searchable">

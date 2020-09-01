@@ -1,30 +1,31 @@
 <template>
-    <div class="sidebar-page" ref="loadingContainer">
-        <section class="sidebar-layout">
-            <Sidebar :expand-on-hover="expandOnHover"
-                    :logout="logout"
-                    :mobile="mobile"
-                    :reduce="reduce"/>
+    <section>
+        <div class="sidebar-page" ref="loadingContainer">
+            <section class="sidebar-layout">
 
-            <!-- Content -->
-            <div class="page-content">
-                <router-view></router-view>
-            </div>
-        </section>
-    </div>
+                <sidebar v-model="open" :logout="logout"/>
+
+                <!-- Content -->
+                <div class="page-content">
+                    <sidebar-toggle v-model="open"/>
+
+                    <router-view></router-view>
+                </div>
+            </section>
+        </div>
+    </section>
 </template>
 
 <script>
     import Sidebar from "./Sidebar";
+    import SidebarToggle from "./SidebarToggle";
 
     export default {
-        components: {Sidebar},
+        components: {SidebarToggle, Sidebar},
         data() {
             return {
-                expandOnHover: false,
-                mobile: "reduce",
-                reduce: false
-            };
+                open: !this.$isMobile()
+            }
         },
         methods: {
             logout() {

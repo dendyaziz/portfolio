@@ -1,14 +1,15 @@
 <template>
     <b-sidebar
             v-if="$auth.check()"
-            position="static"
             type="is-dark"
             ref="loadingContainer"
-            :closable="false"
-            :mobile="mobile"
-            :expand-on-hover="expandOnHover"
-            :reduce="reduce"
-            open
+            :position="$isMobile() ? 'fixed' : 'static'"
+            :open="value"
+            :on-cancel="cancel"
+            :closable="$isMobile()"
+            :overlay="$isMobile()"
+            can-cancel
+            fullheight
     >
         <div class="p-4">
             <div class="menu-title"><i class="fa fa-square icon"></i><span>Portfolio</span></div>
@@ -32,11 +33,20 @@
 <script>
     export default {
         name: 'Sidebar',
+        data() {
+            return {
+                expandOnHover: false,
+                reduce: false,
+            }
+        },
+        methods: {
+            cancel() {
+                this.$emit('input', !this.value);
+            }
+        },
         props: {
-            expandOnHover: {},
             logout: {},
-            mobile: {},
-            reduce: {}
+            value: {},
         }
     }
 </script>

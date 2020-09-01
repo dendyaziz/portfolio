@@ -4,6 +4,7 @@ import GameIndex from './views/Games/Index'
 import Register from "./views/Auth/Register"
 import Login from "./views/Auth/Login"
 import Dashboard from "./views/Dashboard"
+import Home from "./views/Home"
 
 const guestMeta = {auth: false}
 const superMeta = {auth: {roles: 'App\\SuperAdminProfile', redirect: {name: 'login'}, forbiddenRedirect: '/403'}}
@@ -15,6 +16,12 @@ const router = new VueRouter({
     routes: [
         {                                               // Main
             path: '/',
+            name: 'home',
+            component: Home,
+            meta: guestMeta
+        },
+        {                                               // Main
+            path: '/dashboard',
             name: 'dashboard',
             component: Dashboard,
             meta: masterMeta

@@ -77,7 +77,7 @@
                     staySignedIn: this.rememberMe,
                 })
                     .then(res => {
-                        const redirectTo = this.$auth.check('App\\SuperAdminProfile') ? 'questions.index' : 'dashboard';
+                        const redirectTo = this.$auth.check('App\\SuperAdminProfile') ? 'dashboard' : 'dashboard';
                         this.$router.push({name: redirectTo})
                     })
                     .catch(error => {
