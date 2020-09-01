@@ -185,7 +185,7 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
 }
 
 .navbar-menu {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
@@ -324,7 +324,7 @@ ul.pagination-list {
 
 /* Column */
 
-@media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+@media(max-width: 600px) {
   .reverse-order {
     flex-direction: column-reverse;
     display: flex;
@@ -441,6 +441,13 @@ audio {
   color: #B5B5B5 !important;
 }
 
+.is-boxy {
+  padding: 1.5rem 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
 /* Loading */
 
 .loading-overlay.is-solid .loading-background {
@@ -452,6 +459,17 @@ audio {
 
 .image-fit {
   object-fit: cover;
+}
+
+.profile-picture {
+  height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-picture {
+    height: auto;
+    width: 100%;
+  }
 }
 
 
@@ -574,4 +592,12 @@ a:hover, a:focus {
 
 .font-default {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/* Info Table */
+
+.info-title {
+  text-transform: capitalize;
+  font-weight: 700;
 }
