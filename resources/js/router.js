@@ -44,48 +44,6 @@ const router = new VueRouter({
             component: GameIndex,
             meta: masterMeta,
         },
-        {
-            path: '/steps',
-            name: 'steps.index',
-            component: StepIndex,
-            meta: masterMeta,
-        },
-        {
-            path: '/steps/create',
-            name: 'steps.create',
-            component: StepCreate,
-            meta: superMeta,
-        },
-        {                                               // Resources
-            path: '/questions',
-            name: 'questions.index',
-            component: QuestionIndex,
-            meta: masterMeta,
-        },
-        {
-            path: '/questions/create',
-            name: 'questions.create',
-            component: QuestionCreate,
-            meta: masterMeta,
-        },
-        {
-            path: '/avatars',
-            name: 'avatars.index',
-            component: AvatarIndex,
-            meta: masterMeta,
-        },
-        {
-            path: '/squares',
-            name: 'squares.index',
-            component: SquareIndex,
-            meta: masterMeta,
-        },
-        {
-            path: '/squares/create',
-            name: 'squares.create',
-            component: SquareCreate,
-            meta: superMeta,
-        }
     ]
 })
 

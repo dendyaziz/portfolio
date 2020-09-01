@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PlayerProfile extends Model
+class SeekerProfile extends Model
 {
     public function user()
     {

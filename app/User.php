@@ -45,9 +45,9 @@ class User extends Authenticatable implements JWTSubject
         return $this->profile->getMorphClass() == AdminProfile::class;
     }
 
-    public function getIsPlayerAttribute()
+    public function getIsSeekerAttribute()
     {
-        return $this->profile->getMorphClass() == PlayerProfile::class;
+        return $this->profile->getMorphClass() == SeekerProfile::class;
     }
 
     /**

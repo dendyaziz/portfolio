@@ -2,10 +2,10 @@
 
 namespace App\Transformers;
 
-use App\PlayerProfile;
+use App\SeekerProfile;
 use League\Fractal\TransformerAbstract;
 
-class PlayerProfileTransformer extends TransformerAbstract
+class SeekerProfileTransformer extends TransformerAbstract
 {
     private $hasUser;
 
@@ -17,10 +17,10 @@ class PlayerProfileTransformer extends TransformerAbstract
     /**
      * A Fractal transformer.
      *
-     * @param PlayerProfile $model
+     * @param SeekerProfile $model
      * @return array
      */
-    public function transform(PlayerProfile $model)
+    public function transform(SeekerProfile $model)
     {
         return [
             'name' => $model->user->name,

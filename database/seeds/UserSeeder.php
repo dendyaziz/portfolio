@@ -1,7 +1,7 @@
 <?php
 
 use App\AdminProfile;
-use App\PlayerProfile;
+use App\SeekerProfile;
 use App\SuperAdminProfile;
 use App\User;
 use Illuminate\Database\Seeder;
@@ -44,17 +44,17 @@ class UserSeeder extends Seeder
 
         $adminProfile->user()->save($admin);
 
-        /* Player */
-        $player = User::create([
-            'name' => 'Player',
-            'username' => 'playerone',
-            'email' => 'player@mail.com',
-            'password' => Hash::make('player'),
+        /* Seeker */
+        $seeker = User::create([
+            'name' => 'Seeker',
+            'username' => 'seeker_anon',
+            'email' => 'seeker@mail.com',
+            'password' => Hash::make('jl8zbT7e5NkQJviZ7lL1jt9QbRnlTs'),
         ]);
 
-        $playerProfile = PlayerProfile::create();
+        $seekerProfile = SeekerProfile::create();
 
-        $playerProfile->user()->save($player);
+        $seekerProfile->user()->save($seeker);
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }

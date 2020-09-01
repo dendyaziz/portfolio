@@ -66,7 +66,7 @@ class Kernel extends HttpKernel
         'isSuperAdmin' => \App\Http\Middleware\CheckIsSuperAdmin::class,
         'isMaster' => \App\Http\Middleware\CheckIsMaster::class,
         'isSuperAdminOrSelf' => \App\Http\Middleware\CheckIsSuperAdminOrSelf::class,
-        'isPlayer' => \App\Http\Middleware\CheckIsPlayer::class,
+        'isSeeker' => \App\Http\Middleware\CheckIsSeeker::class,
         'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
     ];
 }

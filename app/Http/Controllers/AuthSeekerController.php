@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\PlayerProfile;
+use App\SeekerProfile;
 use App\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 
-class AuthPlayerController extends Controller
+class AuthSeekerController extends Controller
 {
     private function guard()
     {
@@ -34,16 +34,16 @@ class AuthPlayerController extends Controller
                 return $this->failureResponse($validator->errors(), 400);
             }
 
-            $player = User::create([
+            $seeker = User::create([
                 'name' => $request->input('name'),
                 'username' => $request->input('username'),
                 'email' => $request->input('email'),
                 'password' => bcrypt($request->input('password')),
             ]);
 
-            $playerProfile = PlayerProfile::create();
+            $seekerProfile = SeekerProfile::create();
 
-            $playerProfile->user()->save($player);
+            $seekerProfile->user()->save($seeker);
 
             $credentials = $request->only('email', 'password');
             $token = $this->guard()->attempt($credentials);
@@ -79,7 +79,7 @@ class AuthPlayerController extends Controller
             return $this->failureResponse('Wrong email or password', 401);
         }
 
-        if (!auth()->user()->isPlayer) {
+        if (!auth()->user()->isSeeker) {
             return $this->failureResponse('Wrong email or password', 403);
         }
 
