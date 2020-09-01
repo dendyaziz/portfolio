@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Active Project" pattern="file[admin-square-talks-2]:*/&amp;&amp;!file[admin-square-talks-2]:storage//*&amp;&amp;!file[admin-square-talks-2]:vendor//*&amp;&amp;!file[admin-square-talks-2]:public/js//*" />
+</component>

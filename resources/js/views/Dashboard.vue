@@ -1,0 +1,24 @@
+<template>
+    <section>
+        <div class="container">
+            <breadcrumb></breadcrumb>
+            <div class="title columns is-gapless is-mobile">
+                <div class="column">
+                    <h1>Dashboard</h1>
+                </div>
+            </div>
+            <h2 class="subtitle w-max-500">Dashboard is front page of the <strong>Administration UI</strong>.
+                It also provides some user and game information.</h2>
+            <br>
+        </div>
+    </section>
+</template>
+<script>
+    export default {
+        data() {
+            return {
+
+            }
+        }
+    }
+</script>
