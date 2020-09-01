@@ -462,7 +462,7 @@ audio {
 }
 
 .profile-picture {
-  height: 450px;
+  height: 425px;
 }
 
 @media screen and (max-width: 600px) {
@@ -600,4 +600,12 @@ a:hover, a:focus {
 .info-title {
   text-transform: capitalize;
   font-weight: 700;
+}
+
+
+/* Separator */
+
+.separator {
+  background-color: #E3E3E3;
+  margin: 2rem 0;
 }
