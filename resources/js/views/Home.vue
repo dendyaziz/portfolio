@@ -22,6 +22,7 @@
                         <div class="column is-3-desktop is-4-mobile info-title">Social</div>
                         <div class="column is-narrow"><a href="https://linkedin.com/in/dendyaziz" target="_blank"><b-icon pack="fab" icon="linkedin-in" size="is-small"></b-icon></a></div>
                         <div class="column is-narrow"><a href="https://instagram.com/dendyaziz" target="_blank"><b-icon pack="fab" icon="instagram" size="is-small"></b-icon></a></div>
+                        <div class="column is-narrow"><a href="https://github.com/dendyaziz" target="_blank"><b-icon pack="fab" icon="github" size="is-small"></b-icon></a></div>
                         <div class="column is-narrow"><a href="https://dribbble.com/dendyaziz" target="_blank"><b-icon pack="fab" icon="dribbble" size="is-small"></b-icon></a></div>
                     </div>
                     <div class="columns mt-3">
