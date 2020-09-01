@@ -55,7 +55,7 @@
         <div class="container">
             <div class="columns py-2">
                 <div class="column is-one-thirds">
-                    <h1 class="has-text-weight-semibold mb-2"><span class="point">Skills</span></h1>
+                    <h2 class="has-text-weight-semibold mb-2"><span class="point">Skills</span></h2>
                     <h4 class="mb-4">I am inspired by creating great work with people who are as passionate as I am
                         about building something awesome.</h4>
                     <div class="wave is-hidden-touch">
@@ -76,25 +76,25 @@
                 <div class="column is-two-thirds">
                     <div class="columns py-2 is-multiline">
                         <div class="column is-half py-0">
-                            <h3 class="has-text-weight-semibold mb-2">Skill 1</h3>
+                            <h4 class="has-text-weight-semibold mb-2">Web Development</h4>
                             <h4>I am inspired by creating great work with people who are as passionate as I
                                 am</h4>
                         </div>
                         <div class="column is-half py-0">
                             <hr class="is-hidden-tablet">
-                            <h3 class="has-text-weight-semibold mb-2">Skill 2</h3>
+                            <h4 class="has-text-weight-semibold mb-2">UI\UX Design</h4>
                             <h4>I am inspired by creating great work with people who are as passionate as I
                                 am about building something awesome.</h4>
                         </div>
                         <div class="column is-half py-0">
                             <hr>
-                            <h3 class="has-text-weight-semibold mb-2">Skill 3</h3>
+                            <h4 class="has-text-weight-semibold mb-2">Frontend Development</h4>
                             <h4>I am inspired by creating great work with people who are as passionate as I
                                 am about building something awesome.</h4>
                         </div>
                         <div class="column is-half py-0">
                             <hr>
-                            <h3 class="has-text-weight-semibold mb-2">Skill 4</h3>
+                            <h4 class="has-text-weight-semibold mb-2">Image Editing</h4>
                             <h4>I am inspired by creating great work with people who are as passionate as I
                                 am</h4>
                         </div>
