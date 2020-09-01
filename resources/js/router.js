@@ -1,13 +1,6 @@
 import VueRouter from 'vue-router'
 
 import GameIndex from './views/Games/Index'
-import StepIndex from './views/Steps/Index'
-import StepCreate from './views/Steps/Create'
-import QuestionIndex from './views/Questions/Index'
-import QuestionCreate from './views/Questions/Create'
-import AvatarIndex from './views/Avatars/Index'
-import SquareIndex from './views/Squares/Index'
-import SquareCreate from './views/Squares/Create'
 import Register from "./views/Auth/Register"
 import Login from "./views/Auth/Login"
 import Dashboard from "./views/Dashboard"
