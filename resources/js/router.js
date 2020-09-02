@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router'
 
 import GameIndex from './views/Games/Index'
-import Register from './views/Auth/Register.Vue'
-import Login from '/views/Auth/Login'
+import Register from './views/Auth/Register'
+import Login from './views/Auth/Login'
 import Dashboard from './views/Dashboard'
 import Home from './views/Home'
 
