@@ -630,7 +630,7 @@ a:hover, a:focus {
 }
 
 .wave .zigzag .icon.has-text-light {
-  color: #e4e4e4!important;
+  color: #e4e4e4 !important;
 }
 
 
@@ -667,7 +667,7 @@ a:hover, a:focus {
 .info-section::before {
   height: 5.25rem;
   content: "";
-  display:block;
+  display: block;
 }
 
 @media screen and (max-width: 1024px) {
@@ -748,5 +748,34 @@ a:hover {
 /* About */
 
 .about-title {
+  margin-right: .75rem;
+  font-weight: 600;
+  float: left;
+}
 
+.about-subtitle {
+  padding: 2px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    float: none;
+  }
+
+  .about-subtitle.has-date {
+    margin-right: .75rem;
+    padding: 0;
+    float: left;
+  }
+}
+
+
+/* Feedback */
+
+@media screen and (max-width: 768px) {
+  .feedback-quote {
+    margin-top: 1rem;
+    margin-left: -70px;
+  }
 }

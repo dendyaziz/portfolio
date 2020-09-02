@@ -157,27 +157,23 @@
                         <div class="columns pt-2 is-multiline">
                             <div class="column is-full py-0">
                                 <h4 class="about-title">Web Developer</h4>
-                                <p class="about-info">Telkom University</p>
+                                <p class="about-subtitle has-date">Telkom University</p>
                                 <p class="mb-3">May, 2014 - Present</p>
                                 <i>Designed and developed user-friendly website, including optimized check-out page that
                                     increased user clicks, and subsequently customer purchases by 20%.</i>
                             </div>
                             <div class="column is-full py-0">
                                 <hr>
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
+                                <h4 class="about-title">Web Developer</h4>
+                                <p class="about-subtitle has-date">Telkom University</p>
                                 <p class="mb-3">May, 2014 - Present</p>
                                 <i>Designed and developed user-friendly website, including optimized check-out page that
                                     increased user clicks, and subsequently customer purchases by 20%.</i>
                             </div>
                             <div class="column is-full py-0">
                                 <hr>
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
+                                <h4 class="about-title">Web Developer</h4>
+                                <p class="about-subtitle has-date">Telkom University</p>
                                 <p class="mb-3">May, 2014 - Present</p>
                                 <i>Designed and developed user-friendly website, including optimized check-out page that
                                     increased user clicks, and subsequently customer purchases by 20%.</i>
@@ -215,20 +211,16 @@
                     <div class="column is-two-thirds">
                         <div class="columns pt-2 is-multiline">
                             <div class="column is-full py-0">
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Information System</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
-                                <p class="mb-3">May, 2016 - July, 2020</p>
+                                <h4 class="about-title">Information System</h4>
+                                <p class="about-subtitle has-date">Telkom University</p>
+                                <p class="mb-3">May, 2014 - Present</p>
                                 <i>Designed and developed user-friendly website, including optimized check-out page that
                                     increased user clicks, and subsequently customer purchases by 20%.</i>
                             </div>
                             <div class="column is-full py-0">
                                 <hr>
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
+                                <h4 class="about-title">Web Developer</h4>
+                                <p class="about-subtitle has-date">Telkom University</p>
                                 <p class="mb-3">May, 2014 - Present</p>
                                 <i>Designed and developed user-friendly website, including optimized check-out page that
                                     increased user clicks, and subsequently customer purchases by 20%.</i>
@@ -292,23 +284,44 @@
                     <div class="column is-two-thirds">
                         <div class="columns pt-2 is-multiline">
                             <div class="column is-full py-0">
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Jhon Doe</span>
-                                    <span class="has-text-weight-normal">Project Manager @ Telkom University</span>
-                                </h4>
-                                <i>"Designed and developed user-friendly website, including optimized check-out page
-                                    that
-                                    increased user clicks, and subsequently customer purchases by 20%."</i>
+                                <div class="columns is-mobile">
+                                    <div class="column is-narrow">
+                                        <b-image
+                                                src="https://previews.aspirity.com/danny/media/feedback-images/feedback-2.jpg"
+                                                alt="A random image"
+                                                class="is-48x48"
+                                                ratio="1by1">
+                                        </b-image>
+                                    </div>
+                                    <div class="column">
+                                        <h4 class="about-title">Jhon Doe</h4>
+                                        <p class="about-subtitle mb-2">Project Manager @ Telkom University</p>
+                                        <div class="feedback-quote">
+                                            <i>"Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%."</i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="column is-full py-0">
                                 <hr>
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
-                                <p class="mb-3">May, 2014 - Present</p>
-                                <i>Designed and developed user-friendly website, including optimized check-out page that
-                                    increased user clicks, and subsequently customer purchases by 20%.</i>
+                                <div class="columns is-mobile">
+                                    <div class="column is-narrow">
+                                        <b-image
+                                                src="https://previews.aspirity.com/danny/media/feedback-images/feedback-3.jpg"
+                                                responsive
+                                                alt="A random image"
+                                                class="is-48x48"
+                                                ratio="1by1">
+                                        </b-image>
+                                    </div>
+                                    <div class="column">
+                                        <h4 class="about-title">Jhon Doe</h4>
+                                        <p class="about-subtitle mb-2">Project Manager @ Telkom University</p>
+                                        <div class="feedback-quote">
+                                            <i>"Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%."</i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
