@@ -263,7 +263,7 @@
                 <div class="columns py-5">
                     <div class="column is-one-thirds">
                         <h2 class="info-title"><span class="point">Feedback</span></h2>
-                        <p class="mb-4">Take a look at the reviews of my customers and ensure the quality of my
+                        <p class="mb-4">Take a look at the reviews of my clients and ensure the quality of my
                             services.</p>
                         <div class="wave is-hidden-touch">
                             <div class="zigzag">
@@ -302,12 +302,35 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="column is-full py-0">
                                 <hr>
                                 <div class="columns is-mobile">
                                     <div class="column is-narrow">
                                         <b-image
                                                 src="https://previews.aspirity.com/danny/media/feedback-images/feedback-3.jpg"
+                                                responsive
+                                                alt="A random image"
+                                                class="is-48x48"
+                                                ratio="1by1">
+                                        </b-image>
+                                    </div>
+                                    <div class="column">
+                                        <h4 class="about-title">Jhon Doe</h4>
+                                        <p class="about-subtitle mb-2">Project Manager @ Telkom University</p>
+                                        <div class="feedback-quote">
+                                            <i>"Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%."</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-full py-0">
+                                <hr>
+                                <div class="columns is-mobile">
+                                    <div class="column is-narrow">
+                                        <b-image
+                                                src="https://previews.aspirity.com/danny/media/feedback-images/feedback-1.jpg"
                                                 responsive
                                                 alt="A random image"
                                                 class="is-48x48"
