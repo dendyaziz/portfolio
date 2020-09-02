@@ -1,5 +1,6 @@
 html {
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,13 +27,13 @@ body {
   background: rgba(10, 10, 10, 0.50);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .b-sidebar {
     width: 0;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .b-sidebar .sidebar-content {
     position: fixed !important;
   }
@@ -128,6 +129,7 @@ body {
 /* Text Heading */
 
 h1, h2, h3, h4 {
+  color: $black-ter;
   font-family: "Lato", sans-serif;
 }
 
@@ -154,8 +156,22 @@ h4 {
 
 /* Navbar */
 
+.navbar-item, .navbar-link {
+  color: $black-ter;
+}
+
+.navbar-item:hover .logo,
+.navbar-item:focus .logo {
+  color: initial;
+}
+
+.navbar.active {
+  -webkit-box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
+  box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
+}
+
 html.has-navbar-fixed-top, body.has-navbar-fixed-top {
-  padding-top: 5.25rem;
+  padding-top: 0;
 }
 
 .navbar-brand {
@@ -163,22 +179,13 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
   font-size: 24px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .navbar {
     height: 5.25rem;
   }
-
-  .navbar-brand {
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
-  }
 }
 
-@media screen and (max-width: 600px) {
-  html.has-navbar-fixed-top, body.has-navbar-fixed-top {
-    padding-top: 3.25rem;
-  }
-
+@media screen and (max-width: 768px) {
   .navbar-item {
     padding-left: 2rem;
   }
@@ -196,13 +203,15 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
   overflow-y: auto;
   background-color: white;
   width: 100%;
-  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   min-height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .page-content {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -324,7 +333,7 @@ ul.pagination-list {
 
 /* Column */
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
   .reverse-order {
     flex-direction: column-reverse;
     display: flex;
@@ -465,7 +474,7 @@ audio {
   height: 425px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .profile-picture {
     height: auto;
     width: 100%;
@@ -595,14 +604,6 @@ a:hover, a:focus {
 }
 
 
-/* Info Table */
-
-.info-title {
-  text-transform: capitalize;
-  font-weight: 700;
-}
-
-
 /* Separator */
 
 .separator {
@@ -614,21 +615,167 @@ a:hover, a:focus {
 /* Wave */
 
 .wave {
-  bottom: 1rem;
+  bottom: 3.75rem;
   position: absolute;
 }
 
 .wave .zigzag {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
 }
 
 .wave .zigzag .icon {
-  margin-left: -0.45rem;
-  margin-right: -0.45rem;
+  margin-left: -0.65rem;
+  margin-right: -1.25rem;
 }
 
 .wave .zigzag .icon.has-text-light {
-  color: #EFEFEF!important;
+  color: #e4e4e4 !important;
 }
 
+
+/* Info Section */
+
+.main-title,
+.info-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.main-desc {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+
+.info-subtitle {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.info-section::before {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.info-section {
+  margin-bottom: -5.25rem;
+}
+
+#hi.info-section {
+  margin-bottom: -3.25rem;
+}
+
+.info-section::before {
+  height: 5.25rem;
+  content: "";
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  #hi.info-section::before {
+    height: 3.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-section::before {
+    height: 3.25rem;
+  }
+
+  .info-section {
+    margin-bottom: -3.25rem;
+  }
+
+  #hi.info-section {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Link */
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: $primary;
+}
+
+.filter-link {
+  font-weight: 500;
+  margin-right: 1.25rem;
+}
+
+
+/* Portfolio */
+
+.portfolio-box .portfolio-img {
+  overflow: hidden;
+}
+
+.portfolio-box .portfolio-img img {
+  transition: all 0.3s ease;
+}
+
+.portfolio-box .portfolio-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.portfolio-box .portfolio-date {
+  margin-bottom: 1rem;
+}
+
+.portfolio-box:hover .portfolio-img img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+.portfolio-box:hover .portfolio-title {
+  text-decoration: underline;
+  color: $primary;
+}
+
+.portfolio-box:hover .portfolio-date {
+  color: $black;
+}
+
+
+/* About */
+
+.about-title {
+  margin-right: .75rem;
+  font-weight: 600;
+  float: left;
+}
+
+.about-subtitle {
+  padding: 2px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    float: none;
+  }
+
+  .about-subtitle.has-date {
+    margin-right: .75rem;
+    padding: 0;
+    float: left;
+  }
+}
+
+
+/* Feedback */
+
+@media screen and (max-width: 768px) {
+  .feedback-quote {
+    margin-top: 1rem;
+    margin-left: -70px;
+  }
+}
