@@ -492,7 +492,7 @@ form hr {
 /* Table */
 
 .b-table tr.deleted-row {
-  background-color: rgb(255, 56, 96, .05);
+  background-color: rgba(255, 56, 96, .05);
   animation: example .2s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
