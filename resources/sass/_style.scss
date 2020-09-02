@@ -628,11 +628,16 @@ a:hover, a:focus {
 }
 
 .wave .zigzag .icon.has-text-light {
-  color: #EFEFEF!important;
+  color: #e4e4e4!important;
 }
 
 
-/* Section */
+/* Info Section */
+
+.sub-info-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 
 .info-section::before {
   border-bottom: 1px solid #E3E3E3;
