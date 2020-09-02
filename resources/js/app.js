@@ -15,6 +15,7 @@ import auth from './auth'
 import mixins from './mixins'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import '../../public/css/app.css'
 
 import App from './layouts/App.vue'
 
