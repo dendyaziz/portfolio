@@ -214,10 +214,10 @@
         <div id="portfolio" class="container info-section">
             <div class="py-5">
                 <h2 class="sub-info-title"><span class="point">Portfolio</span></h2>
-                <a href="https://dribbble.com/dendyaziz" class="filter-link" target="_blank">All</a>
-                <a href="https://dribbble.com/dendyaziz" class="filter-link" target="_blank">Frontend</a>
-                <a href="https://dribbble.com/dendyaziz" class="filter-link" target="_blank">Web Sites</a>
-                <a href="https://dribbble.com/dendyaziz" class="filter-link" target="_blank">Mobile</a>
+                <a class="filter-link">All Projects</a>
+                <a class="filter-link">Frontend</a>
+                <a class="filter-link">Web Sites</a>
+                <a class="filter-link">Mobile</a>
             </div>
         </div>
 
