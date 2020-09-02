@@ -6,13 +6,13 @@
             </b-navbar-item>
         </template>
         <template slot="end">
-            <b-navbar-item href="#">
+            <b-navbar-item href="#hi">
                 Hi
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#skills">
                 Skills
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#experience">
                 Experience
             </b-navbar-item>
             <b-navbar-item href="#">

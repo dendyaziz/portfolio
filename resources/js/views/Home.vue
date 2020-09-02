@@ -1,8 +1,8 @@
 <template>
     <section>
         <Navbar/>
-        <div class="container">
-            <div class="columns reverse-order">
+        <div id="hi" class="container info-section">
+            <div class="columns pt-5 reverse-order">
                 <div class="column">
                     <h1 class="has-text-weight-semibold mb-2">I am <span class="point">Dendy Armandiaz</span></h1>
                     <h4 class="mb-4">I am a Front-end Developer living in Bekasi, Indonesia. I recently work as a
@@ -36,7 +36,7 @@
                             <b-icon pack="fab" icon="dribbble" size="is-small"></b-icon>
                         </a></div>
                     </div>
-                    <div class="columns mt-3">
+                    <div class="columns mt-4 py-3">
                         <div class="column is-narrow py-1">
                             <b-button type="is-primary" class="is-boxy" expanded>Contact Me</b-button>
                         </div>
@@ -51,9 +51,10 @@
                 </div>
             </div>
         </div>
-        <hr class="separator">
-        <div class="container">
-            <div class="columns py-2">
+        <!--<hr class="separator">-->
+
+        <div id="skills" class="container info-section">
+            <div class="columns py-5">
                 <div class="column is-one-thirds">
                     <h2 class="has-text-weight-semibold mb-2"><span class="point">Skills</span></h2>
                     <h4 class="mb-4">I am inspired by creating great work with people who are as passionate as I am
@@ -73,8 +74,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="column is-two-thirds">
-                    <div class="columns py-2 is-multiline">
+                    <div class="columns pt-2 is-multiline">
                         <div class="column is-half py-0">
                             <h4 class="has-text-weight-semibold mb-2">Web Development</h4>
                             <h4>I am inspired by creating great work with people who are as passionate as I
@@ -102,6 +104,108 @@
                 </div>
             </div>
         </div>
+        <!--<hr class="separator">-->
+        <div id="experience" class="container info-section">
+            <div class="columns py-5">
+                <div class="column is-one-thirds">
+                    <h2 class="has-text-weight-semibold mb-2"><span class="point">Skills</span></h2>
+                    <h4 class="mb-4">I am inspired by creating great work with people who are as passionate as I am
+                        about building something awesome.</h4>
+                    <div class="wave is-hidden-touch">
+                        <div class="zigzag">
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                        </div>
+                        <div class="zigzag">
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-two-thirds">
+                    <div class="columns pt-2 is-multiline">
+                        <div class="column is-half py-0">
+                            <h4 class="has-text-weight-semibold mb-2">Web Development</h4>
+                            <h4>I am inspired by creating great work with people who are as passionate as I
+                                am</h4>
+                        </div>
+                        <div class="column is-half py-0">
+                            <hr class="is-hidden-tablet">
+                            <h4 class="has-text-weight-semibold mb-2">UI\UX Design</h4>
+                            <h4>I am inspired by creating great work with people who are as passionate as I
+                                am about building something awesome.</h4>
+                        </div>
+                        <div class="column is-half py-0">
+                            <hr>
+                            <h4 class="has-text-weight-semibold mb-2">Frontend Development</h4>
+                            <h4>I am inspired by creating great work with people who are as passionate as I
+                                am about building something awesome.</h4>
+                        </div>
+                        <div class="column is-half py-0">
+                            <hr>
+                            <h4 class="has-text-weight-semibold mb-2">Image Editing</h4>
+                            <h4>I am inspired by creating great work with people who are as passionate as I
+                                am</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </section>
 </template>
 <script>
