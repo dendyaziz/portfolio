@@ -1,7 +1,7 @@
 <template>
-    <b-navbar wrapper-class="container" shadow fixed-top>
+    <b-navbar wrapper-class="container" :class="value ? 'active' : ''" shadow fixed-top>
         <template slot="brand">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            <b-navbar-item href="#hi">
                 <span class="point has-tex">Dendy</span>
             </b-navbar-item>
         </template>
@@ -18,8 +18,8 @@
             <b-navbar-item href="#education">
                 Education
             </b-navbar-item>
-            <b-navbar-item href="#">
-                Activities
+            <b-navbar-item href="#portfolio">
+                Portfolio
             </b-navbar-item>
             <b-navbar-item href="#">
                 Contact Me
@@ -30,6 +30,8 @@
 <script>
     export default {
         name: 'Navbar',
-        props: {}
+        props: {
+            value: {}
+        }
     }
 </script>
