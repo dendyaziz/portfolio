@@ -21,6 +21,9 @@
             <b-navbar-item href="#portfolio">
                 Portfolio
             </b-navbar-item>
+            <b-navbar-item href="#feedback">
+                Feedback
+            </b-navbar-item>
             <b-navbar-item href="#">
                 Contact Me
             </b-navbar-item>
