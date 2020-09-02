@@ -27,13 +27,13 @@ body {
   background: rgba(10, 10, 10, 0.50);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .b-sidebar {
     width: 0;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .b-sidebar .sidebar-content {
     position: fixed !important;
   }
@@ -179,18 +179,13 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
   font-size: 24px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .navbar {
     height: 5.25rem;
   }
-
-  .navbar-brand {
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar-item {
     padding-left: 2rem;
   }
@@ -213,7 +208,7 @@ html.has-navbar-fixed-top, body.has-navbar-fixed-top {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .page-content {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -338,7 +333,7 @@ ul.pagination-list {
 
 /* Column */
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
   .reverse-order {
     flex-direction: column-reverse;
     display: flex;
@@ -479,7 +474,7 @@ audio {
   height: 425px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .profile-picture {
     height: auto;
     width: 100%;
@@ -675,7 +670,13 @@ a:hover, a:focus {
   display:block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+  #hi.info-section::before {
+    height: 3.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .info-section::before {
     height: 3.25rem;
   }
@@ -708,17 +709,22 @@ a:hover {
 
 /* Portfolio */
 
-.portfolio-img {
+.portfolio-box .portfolio-img {
   overflow: hidden;
 }
 
-.portfolio-img img {
+.portfolio-box .portfolio-img img {
   transition: all 0.3s ease;
 }
 
 .portfolio-box .portfolio-title {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
+  margin-top: 1rem;
+}
+
+.portfolio-box .portfolio-date {
+  margin-bottom: 1rem;
 }
 
 .portfolio-box:hover .portfolio-img img {
@@ -731,8 +737,16 @@ a:hover {
 
 .portfolio-box:hover .portfolio-title {
   text-decoration: underline;
+  color: $primary;
 }
 
 .portfolio-box:hover .portfolio-date {
   color: $black;
+}
+
+
+/* About */
+
+.about-title {
+
 }

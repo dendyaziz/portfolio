@@ -156,8 +156,16 @@
                     <div class="column is-two-thirds">
                         <div class="columns pt-2 is-multiline">
                             <div class="column is-full py-0">
+                                <h4 class="about-title">Web Developer</h4>
+                                <p class="about-info">Telkom University</p>
+                                <p class="mb-3">May, 2014 - Present</p>
+                                <i>Designed and developed user-friendly website, including optimized check-out page that
+                                    increased user clicks, and subsequently customer purchases by 20%.</i>
+                            </div>
+                            <div class="column is-full py-0">
+                                <hr>
                                 <h4>
-                                    <span class="has-text-weight-semibold mr-1">Web Developer</span>
+                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
                                     <span class="has-text-weight-normal">Telkom University</span>
                                 </h4>
                                 <p class="mb-3">May, 2014 - Present</p>
@@ -167,17 +175,7 @@
                             <div class="column is-full py-0">
                                 <hr>
                                 <h4>
-                                    <span class="has-text-weight-semibold mr-1">Web Developer</span>
-                                    <span class="has-text-weight-normal">Telkom University</span>
-                                </h4>
-                                <p class="mb-3">May, 2014 - Present</p>
-                                <i>Designed and developed user-friendly website, including optimized check-out page that
-                                    increased user clicks, and subsequently customer purchases by 20%.</i>
-                            </div>
-                            <div class="column is-full py-0">
-                                <hr>
-                                <h4>
-                                    <span class="has-text-weight-semibold mr-1">Web Developer</span>
+                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
                                     <span class="has-text-weight-normal">Telkom University</span>
                                 </h4>
                                 <p class="mb-3">May, 2014 - Present</p>
@@ -218,7 +216,7 @@
                         <div class="columns pt-2 is-multiline">
                             <div class="column is-full py-0">
                                 <h4>
-                                    <span class="has-text-weight-semibold mr-1">Information System</span>
+                                    <span class="has-text-weight-semibold mr-2">Information System</span>
                                     <span class="has-text-weight-normal">Telkom University</span>
                                 </h4>
                                 <p class="mb-3">May, 2016 - July, 2020</p>
@@ -228,7 +226,7 @@
                             <div class="column is-full py-0">
                                 <hr>
                                 <h4>
-                                    <span class="has-text-weight-semibold mr-1">Web Developer</span>
+                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
                                     <span class="has-text-weight-normal">Telkom University</span>
                                 </h4>
                                 <p class="mb-3">May, 2014 - Present</p>
@@ -251,7 +249,7 @@
                     <a class="filter-link">Mobile</a>
 
                     <div class="columns is-mobile is-multiline mt-2">
-                        <div class="column is-half-touch is-one-quarter-desktop" v-for="a in [1, 2, 3]">
+                        <div class="column is-half-touch is-one-quarter-desktop" v-for="a in [1, 2, 3, 4, 5, 6, 7, 8]">
                             <a href="" class="portfolio-box">
                                 <b-image
                                         src="https://i.ibb.co/85fS9WW/manawa.png"
@@ -262,6 +260,56 @@
                                 <h4 class="portfolio-title">Investment app "Manawa"</h4>
                                 <p class="portfolio-date">May, 2020</p>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="feedback" class="info-section">
+            <div class="container">
+                <div class="columns py-5">
+                    <div class="column is-one-thirds">
+                        <h2 class="info-title"><span class="point">Feedback</span></h2>
+                        <p class="mb-4">Take a look at the reviews of my customers and ensure the quality of my
+                            services.</p>
+                        <div class="wave is-hidden-touch">
+                            <div class="zigzag">
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            </div>
+                            <div class="zigzag">
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-two-thirds">
+                        <div class="columns pt-2 is-multiline">
+                            <div class="column is-full py-0">
+                                <h4>
+                                    <span class="has-text-weight-semibold mr-2">Jhon Doe</span>
+                                    <span class="has-text-weight-normal">Project Manager @ Telkom University</span>
+                                </h4>
+                                <i>"Designed and developed user-friendly website, including optimized check-out page
+                                    that
+                                    increased user clicks, and subsequently customer purchases by 20%."</i>
+                            </div>
+                            <div class="column is-full py-0">
+                                <hr>
+                                <h4>
+                                    <span class="has-text-weight-semibold mr-2">Web Developer</span>
+                                    <span class="has-text-weight-normal">Telkom University</span>
+                                </h4>
+                                <p class="mb-3">May, 2014 - Present</p>
+                                <i>Designed and developed user-friendly website, including optimized check-out page that
+                                    increased user clicks, and subsequently customer purchases by 20%.</i>
+                            </div>
                         </div>
                     </div>
                 </div>
