@@ -60,16 +60,16 @@
                         building something beautiful.</p>
                     <div class="wave is-hidden-touch">
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
                         </div>
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
                         </div>
                     </div>
                 </div>
@@ -113,16 +113,16 @@
                         people every day.</p>
                     <div class="wave is-hidden-touch">
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
                         </div>
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
                         </div>
                     </div>
                 </div>
@@ -171,16 +171,16 @@
                         try to learn something new every single day.</p>
                     <div class="wave is-hidden-touch">
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
                         </div>
                         <div class="zigzag">
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
-                            <b-icon pack="fas" icon="chevron-down" size="is-medium" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
                         </div>
                     </div>
                 </div>
@@ -218,6 +218,16 @@
                 <a class="filter-link">Frontend</a>
                 <a class="filter-link">Web Sites</a>
                 <a class="filter-link">Mobile</a>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-image
+                                src="https://i.ibb.co/85fS9WW/manawa.png"
+                                alt="A random image"
+                                ratio="6by4">
+                        </b-image>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -2,7 +2,7 @@
     <b-navbar wrapper-class="container" :class="value ? 'active' : ''" shadow fixed-top>
         <template slot="brand">
             <b-navbar-item href="#hi">
-                <span class="point has-tex">Dendy</span>
+                <span class="point logo">Dendy</span>
             </b-navbar-item>
         </template>
         <template slot="end">

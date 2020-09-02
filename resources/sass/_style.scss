@@ -155,6 +155,11 @@ h4 {
 
 /* Navbar */
 
+.navbar-item:hover .logo,
+.navbar-item:focus .logo {
+  color: initial;
+}
+
 .navbar.active {
   -webkit-box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
   box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
@@ -618,18 +623,18 @@ a:hover, a:focus {
 /* Wave */
 
 .wave {
-  bottom: 3.25rem;
+  bottom: 3.75rem;
   position: absolute;
 }
 
 .wave .zigzag {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
 }
 
 .wave .zigzag .icon {
-  margin-left: -0.45rem;
-  margin-right: -0.45rem;
+  margin-left: -0.65rem;
+  margin-right: -1.25rem;
 }
 
 .wave .zigzag .icon.has-text-light {
@@ -677,12 +682,7 @@ a:hover, a:focus {
 }
 
 
-/* Filter */
-
-.filter-link {
-  font-weight: 500;
-  margin-right: 1.25rem;
-}
+/* Link */
 
 a {
   color: inherit;
@@ -690,4 +690,9 @@ a {
 
 a:hover {
   color: $primary;
+}
+
+.filter-link {
+  font-weight: 500;
+  margin-right: 1.25rem;
 }
