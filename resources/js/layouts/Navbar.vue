@@ -15,7 +15,7 @@
             <b-navbar-item href="#experience">
                 Experience
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#education">
                 Education
             </b-navbar-item>
             <b-navbar-item href="#">
