@@ -26,28 +26,28 @@
                         <div class="columns is-mobile">
                             <div class="column is-3-desktop is-4-mobile info-title">Social</div>
                             <div class="column is-narrow">
-                                <b-tooltip label="LinkedIn" type="is-dark" delay="500">
+                                <b-tooltip label="LinkedIn" type="is-dark" :delay="500">
                                     <a href="https://linkedin.com/in/dendyaziz" target="_blank">
                                         <b-icon pack="fab" icon="linkedin-in" size="is-small"></b-icon>
                                     </a>
                                 </b-tooltip>
                             </div>
                             <div class="column is-narrow">
-                                <b-tooltip label="Instagram" type="is-dark" delay="500">
+                                <b-tooltip label="Instagram" type="is-dark" :delay="500">
                                     <a href="https://instagram.com/dendyaziz" target="_blank">
                                         <b-icon pack="fab" icon="instagram" size="is-small"></b-icon>
                                     </a>
                                 </b-tooltip>
                             </div>
                             <div class="column is-narrow">
-                                <b-tooltip label="GitHub" type="is-dark" delay="500">
+                                <b-tooltip label="GitHub" type="is-dark" :delay="500">
                                     <a href="https://github.com/dendyaziz" target="_blank">
                                         <b-icon pack="fab" icon="github" size="is-small"></b-icon>
                                     </a>
                                 </b-tooltip>
                             </div>
                             <div class="column is-narrow">
-                                <b-tooltip label="Dribbble" type="is-dark" delay="500">
+                                <b-tooltip label="Dribbble" type="is-dark" :delay="500">
                                     <a href="https://dribbble.com/dendyaziz" target="_blank">
                                         <b-icon pack="fab" icon="dribbble" size="is-small"></b-icon>
                                     </a>
@@ -345,6 +345,61 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="info-section">
+            <div class="container">
+                <div class="columns py-5">
+                    <div class="column is-one-thirds">
+                        <h2 class="info-title"><span class="point">Contact</span></h2>
+                        <p class="mb-4">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</p>
+                        <div class="wave is-hidden-touch">
+                            <div class="zigzag">
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-light"></b-icon>
+                            </div>
+                            <div class="zigzag">
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                                <b-icon pack="fas" icon="chevron-down" size="is-large" type="is-primary"></b-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-two-thirds">
+                        <div class="columns pt-2 is-multiline">
+                            <div class="column is-two-fifths pb-1">
+                                <b-field>
+                                    <b-input placeholder="Name" class="is-boxy" required></b-input>
+                                </b-field>
+
+                                <b-field>
+                                    <b-input placeholder="Email" type="email" class="is-boxy" required></b-input>
+                                </b-field>
+                            </div>
+                            <div class="column is-three-fifths">
+                                <b-field>
+                                    <b-input type="textarea"
+                                             class="is-boxy"
+                                             minlength="10"
+                                             maxlength="100"
+                                             placeholder="Hi Dendy, I would like you to join us for ..."
+                                             required>
+                                    </b-input>
+                                </b-field>
+                            </div>
+                        </div>
+                        <div class="columns is-pulled-right">
+                            <div class="column is-narrow">
+                                <b-button type="is-primary" class="is-boxy" expanded>Send Message</b-button>
                             </div>
                         </div>
                     </div>
