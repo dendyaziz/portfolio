@@ -39960,6 +39960,10 @@ a:hover, a:focus {
   margin-bottom: -5.25rem;
 }
 
+.info-section:last-child > div > .columns {
+  margin-bottom: 0;
+}
+
 #hi.info-section:not(:last-child) {
   margin-bottom: -3.25rem;
 }

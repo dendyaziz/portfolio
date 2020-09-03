@@ -10,8 +10,8 @@
                                     <h1 class="font-default"><b>Login</b></h1>
                                 </div>
                             </div>
-                            <b-message v-if="hasError" type="is-danger">
-                                Wrong username or password
+                            <b-message v-if="error" type="is-danger">
+                                {{ error }}
                             </b-message>
                             <form autocomplete="off" @submit.prevent="login" method="post">
                                 <b-field label="Email">
@@ -59,7 +59,7 @@
                 email: 'admin@mail.com',
                 password: 'admin',
                 rememberMe: false,
-                hasError: false,
+                error: '',
                 loadingLogin: false
             }
         },
@@ -82,7 +82,29 @@
                     })
                     .catch(error => {
                         this.loadingLogin = false;
-                        this.hasError = true;
+
+                        if (error.response.status === 500) {
+                            this.error = error.response.data.message;
+
+                            this.$buefy.snackbar.open({
+                                message: 'Login failed, please try again later',
+                                type: 'is-warning',
+                                duration: 5000,
+                                actionText: 'Retry',
+                                onAction: () => {
+                                    this.submit();
+                                }
+                            });
+                            return;
+                        }
+
+                        const errors = error.response.data.errors;
+
+                        if (error.response.status === 400) {
+                            this.error = errors[Object.keys(errors)[0]][0];
+                        } else {
+                            this.error = errors;
+                        }
                     });
             }
         }
