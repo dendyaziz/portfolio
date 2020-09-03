@@ -4,17 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/js/components/StepViewer.vue" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a987294c-e8a0-4343-9ca3-9cbf36789f63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/layouts/FooterBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/layouts/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/vue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/vue.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="a987294c-e8a0-4343-9ca3-9cbf36789f63" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -576,12 +566,12 @@
       <workItem from="1599050940113" duration="7030000" />
       <workItem from="1599086474689" duration="6289000" />
       <workItem from="1599093143164" duration="3909000" />
-      <workItem from="1599098798932" duration="1152000" />
+      <workItem from="1599098798932" duration="1393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368705000" />
+    <option name="totallyTimeSpent" value="368946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,7 +584,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1296" height="696" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25485438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
