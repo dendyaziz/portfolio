@@ -669,11 +669,15 @@ a:hover, a:focus {
   border-bottom: 1px solid #E3E3E3;
 }
 
-.info-section {
+.info-section:not(:last-child) {
   margin-bottom: -5.25rem;
 }
 
-#hi.info-section {
+.info-section:last-child > div > .columns {
+  margin-bottom: 0;
+}
+
+#hi.info-section:not(:last-child) {
   margin-bottom: -3.25rem;
 }
 
@@ -694,11 +698,11 @@ a:hover, a:focus {
     height: 3.25rem;
   }
 
-  .info-section {
+  .info-section:not(:last-child) {
     margin-bottom: -3.25rem;
   }
 
-  #hi.info-section {
+  #hi.info-section:not(:last-child) {
     margin-bottom: 0;
   }
 }
@@ -791,4 +795,12 @@ a:hover {
     margin-top: 1rem;
     margin-left: -70px;
   }
+}
+
+
+/* Columns */
+
+.columns.is-right {
+  display: flex;
+  justify-content: flex-end;
 }
