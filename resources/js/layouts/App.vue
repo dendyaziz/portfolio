@@ -13,15 +13,18 @@
                 </div>
             </section>
         </div>
+
+        <footer-bar/>
     </section>
 </template>
 
 <script>
     import Sidebar from "./Sidebar";
     import SidebarToggle from "./SidebarToggle";
+    import FooterBar from "./FooterBar";
 
     export default {
-        components: {SidebarToggle, Sidebar},
+        components: {FooterBar, SidebarToggle, Sidebar},
         data() {
             return {
                 open: !this.$isMobile()
@@ -40,6 +43,3 @@
     };
 </script>
 
-<style type="sass">
-
-</style>

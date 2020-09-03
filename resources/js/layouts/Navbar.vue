@@ -24,7 +24,7 @@
             <b-navbar-item href="#feedback">
                 Feedback
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#contact">
                 Contact Me
             </b-navbar-item>
         </template>
