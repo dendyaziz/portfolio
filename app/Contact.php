@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Mail\Message;
 
 class Contact extends Model
 {
@@ -14,6 +13,19 @@ class Contact extends Model
 
     public function messages()
     {
-        return $this->hasMany(Message::class);
+        return $this->hasMany(ContactMessage::class);
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+        static::creating(function ($model) {
+            $model->name = strtolower($model->name);
+            $model->email = strtolower($model->email);
+        });
+        static::updating(function ($model) {
+            $model->name = strtolower($model->name);
+            $model->email = strtolower($model->email);
+        });
     }
 }

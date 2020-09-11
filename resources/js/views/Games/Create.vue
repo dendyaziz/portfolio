@@ -76,7 +76,7 @@
                         const status = res.data.updated ? 'A step updated successfully' : 'New step saved successfully';
 
                         this.$buefy.toast.open({
-                            message: `${status} <i class="mdi mdi-check-bold text-success"></i>`,
+                            message: `${status} <i class="mdi mdi-check-bold has-text-success"></i>`,
                             position: this.$isMobile() ? 'is-bottom' : 'is-top',
                         });
 

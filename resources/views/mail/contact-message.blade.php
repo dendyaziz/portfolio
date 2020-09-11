@@ -1,7 +1,4 @@
-@php
-    $date = \Carbon\Carbon::now()->locale('id_ID');
-@endphp
-        <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,14 +109,17 @@
 </div>
 <div class="form-group">
     <div class="label">Sender:</div>
-    <div class="value">{{ $contactMessage->contact->name }}</div>
+    <div class="value capitalize">{{ $contactMessage->contact->name }}</div>
     <div class="value"><a href="mailto:{{ $contactMessage->contact->email }}" title="Send Email">
             {{ $contactMessage->contact->email }}</a></div>
 </div>
 <div class="form-group">
     <div class="label">Message:</div>
     <div class="value">{{ $contactMessage->message }}</div>
-    <div class="value">{{ $wastePickerRegistration->created_at->format('d M Y, H:i') }}</div>
+</div>
+<div class="form-group">
+    <div class="label">Sent:</div>
+    <div class="value">{{ $contactMessage->created_at->format('d M Y, H:i') }}</div>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
                     Portfolio @2020 by <b>Dendy</b>.
                 </div>
                 <div class="column is-narrow has-text-centered">
-                    Built with love using Vue.JS ❤
+                    Made with love using Vue.js ❤
                 </div>
             </div>
         </div>

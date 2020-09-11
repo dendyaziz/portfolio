@@ -8,11 +8,11 @@
                     <div class="columns pt-5 reverse-order">
                         <div class="column">
                             <h1 class="main-title">I am <span class="point">Dendy Armandiaz</span></h1>
-                            <p class="main-desc">I am a Frontend Developer living in Bekasi, Indonesia. I recently work
+                            <p class="main-desc">I am a Web Developer living in Bekasi, Indonesia. I recently work
                                 as a
                                 freelance Remote Web Developer for Telkom University, located in Bandung. I am looking
                                 to
-                                collaborate with you as a Frontend Developer.</p>
+                                collaborate with you as a Web Developer.</p>
                             <div class="columns mb-0 is-mobile">
                                 <div class="column mb-0 is-3-desktop is-4-mobile info-title">Whatsapp</div>
                                 <div class="column mb-0"><span class="mr-1">+62</span><span class="mr-1">896</span><span
@@ -395,7 +395,16 @@
                             </div>
                         </div>
 
-                        <div class="column is-two-thirds" ref="loadingContainer" :closable="false">
+                        <div class="column is-two-thirds">
+                            <b-loading :is-full-page="false" v-model="isLoadingSubmit"></b-loading>
+                            <b-notification type="is-success" v-if="successMessage" aria-close-label="Close">
+                                <div class="columns is-variable is-1 is-mobile">
+                                    <div class="column is-narrow">
+                                        <b-icon pack="fas" icon="check-circle" type="is-white"> </b-icon>
+                                    </div>
+                                    <div class="column">{{ successMessage }}</div>
+                                </div>
+                            </b-notification>
                             <form autocomplete="off" ref="form" method="post" @submit.prevent="submit">
                                 <div class="columns pt-2 is-multiline">
                                     <div class="column is-two-fifths pb-1">
@@ -420,7 +429,7 @@
                                         <b-field>
                                             <b-input type="textarea"
                                                      class="is-boxy"
-                                                     minlength="10"
+                                                     minlength="20"
                                                      placeholder="Hi Dendy, I would like you to join us for ..."
                                                      v-model="message"
                                                      required>
@@ -432,6 +441,7 @@
                                     <div class="column is-narrow">
                                         <b-button type="is-primary"
                                                   class="is-boxy"
+                                                  native-type="submit"
                                                   expanded>
                                             Send Message
                                         </b-button>
@@ -455,26 +465,30 @@
         data() {
             return {
                 isScrolled: false,
-                email: '',
-                name: '',
-                message: '',
-                error: '',
+                isLoadingSubmit: false,
+                name: 'dendy armandiaz aziz',
+                email: 'dendy.aziz@gmail.com',
+                message: 'Hello Dendy, I would like to know if you want to join us in our big project',
+                errorMessage: '',
+                successMessage: '',
             }
         },
         methods: {
             onScroll() {
                 this.isScrolled = window.scrollY > 0;
             },
+            resetForm() {
+                this.name = '';
+                this.email = '';
+                this.message = '';
+            },
             submit() {
-                const loadingComponent = this.$buefy.loading.open({
-                    container: this.$refs.loadingContainer.$el
-                });
+                this.isLoadingSubmit = true;
 
-                const formData = getFormData({
-                    name: this.name,
-                    email: this.email,
-                    message: this.message,
-                });
+                const formData = new FormData();
+                formData.append("name", this.name);
+                formData.append("email", this.email);
+                formData.append("message", this.message);
 
                 this.$http({
                     url: `send_message`,
@@ -482,19 +496,17 @@
                     data: formData,
                 })
                     .then(res => {
-                        loadingComponent.close();
+                        this.isLoadingSubmit = false;
+                        this.successMessage = 'Thank you! i\'ll get back to you very soon.';
 
-                        this.$buefy.toast.open({
-                            message: `Thank u! I'll get back to you very soon <i class="mdi mdi-check-bold text-success"></i>`,
-                            position: this.$isMobile() ? 'is-bottom' : 'is-top',
-                        });
+                        this.resetForm();
                     })
                     .catch(error => {
-                        loadingComponent.close();
+                        this.isLoadingSubmit = false;
 
                         if (error.response.status === 500) {
                             this.$buefy.snackbar.open({
-                                message: 'Failed to send this message, ply try again.',
+                                message: 'Failed to send message, please try again.',
                                 type: 'is-warning',
                                 duration: 5000,
                                 actionText: 'Retry',
