@@ -12,9 +12,7 @@ class ContactMessageMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $name;
-    protected $email;
-    protected $message;
+    protected $contactMessage;
 
     /**
      * Create a new message instance.
@@ -23,9 +21,7 @@ class ContactMessageMail extends Mailable
      */
     public function __construct(ContactMessage $contactMessage)
     {
-        $this->name = $contactMessage->name;
-        $this->email = $contactMessage->email;
-        $this->message = $contactMessage->message;
+        $this->contactMessage = $contactMessage;
     }
 
     /**
@@ -35,7 +31,7 @@ class ContactMessageMail extends Mailable
      */
     public function build()
     {
-        return $this->subject("Portfolio: Mail from $this->name")
+        return $this->subject("Portfolio: Mail from " . $this->contactMessage->contact->name)
             ->view('vendor.mail.pickup-schedule-created');
     }
 }

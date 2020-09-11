@@ -395,33 +395,49 @@
                             </div>
                         </div>
 
-                        <div class="column is-two-thirds">
-                            <div class="columns pt-2 is-multiline">
-                                <div class="column is-two-fifths pb-1">
-                                    <b-field>
-                                        <b-input placeholder="Name" class="is-boxy" required></b-input>
-                                    </b-field>
+                        <div class="column is-two-thirds" ref="loadingContainer" :closable="false">
+                            <form autocomplete="off" ref="form" method="post" @submit.prevent="submit">
+                                <div class="columns pt-2 is-multiline">
+                                    <div class="column is-two-fifths pb-1">
+                                        <b-field>
+                                            <b-input placeholder="Name"
+                                                     class="is-boxy"
+                                                     v-model="name"
+                                                     required>
+                                            </b-input>
+                                        </b-field>
 
-                                    <b-field>
-                                        <b-input placeholder="Email" type="email" class="is-boxy" required></b-input>
-                                    </b-field>
+                                        <b-field>
+                                            <b-input placeholder="Email"
+                                                     type="email"
+                                                     class="is-boxy"
+                                                     v-model="email"
+                                                     required>
+                                            </b-input>
+                                        </b-field>
+                                    </div>
+                                    <div class="column is-three-fifths">
+                                        <b-field>
+                                            <b-input type="textarea"
+                                                     class="is-boxy"
+                                                     minlength="10"
+                                                     placeholder="Hi Dendy, I would like you to join us for ..."
+                                                     v-model="message"
+                                                     required>
+                                            </b-input>
+                                        </b-field>
+                                    </div>
                                 </div>
-                                <div class="column is-three-fifths">
-                                    <b-field>
-                                        <b-input type="textarea"
-                                                 class="is-boxy"
-                                                 minlength="10"
-                                                 placeholder="Hi Dendy, I would like you to join us for ..."
-                                                 required>
-                                        </b-input>
-                                    </b-field>
+                                <div class="columns is-right">
+                                    <div class="column is-narrow">
+                                        <b-button type="is-primary"
+                                                  class="is-boxy"
+                                                  expanded>
+                                            Send Message
+                                        </b-button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="columns is-right">
-                                <div class="column is-narrow">
-                                    <b-button type="is-primary" class="is-boxy" expanded>Send Message</b-button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -438,13 +454,66 @@
         components: {BIcon, Navbar},
         data() {
             return {
-                isScrolled: false
+                isScrolled: false,
+                email: '',
+                name: '',
+                message: '',
+                error: '',
             }
         },
         methods: {
             onScroll() {
                 this.isScrolled = window.scrollY > 0;
-            }
+            },
+            submit() {
+                const loadingComponent = this.$buefy.loading.open({
+                    container: this.$refs.loadingContainer.$el
+                });
+
+                const formData = getFormData({
+                    name: this.name,
+                    email: this.email,
+                    message: this.message,
+                });
+
+                this.$http({
+                    url: `send_message`,
+                    method: 'POST',
+                    data: formData,
+                })
+                    .then(res => {
+                        loadingComponent.close();
+
+                        this.$buefy.toast.open({
+                            message: `Thank u! I'll get back to you very soon <i class="mdi mdi-check-bold text-success"></i>`,
+                            position: this.$isMobile() ? 'is-bottom' : 'is-top',
+                        });
+                    })
+                    .catch(error => {
+                        loadingComponent.close();
+
+                        if (error.response.status === 500) {
+                            this.$buefy.snackbar.open({
+                                message: 'Failed to send this message, ply try again.',
+                                type: 'is-warning',
+                                duration: 5000,
+                                actionText: 'Retry',
+                                onAction: () => {
+                                    this.submit();
+                                }
+                            });
+                            return;
+                        }
+
+                        const errors = error.response.data.errors;
+
+                        if (error.response.status === 400) {
+                            this.error = errors[Object.keys(errors)[0]][0];
+                        } else {
+                            this.error = errors;
+                        }
+                    });
+            },
         },
         mounted: function () {
             window.addEventListener('scroll', this.onScroll);

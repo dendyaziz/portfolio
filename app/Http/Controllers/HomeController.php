@@ -17,10 +17,11 @@ class HomeController extends Controller
     public function sendMessage(Request $request)
     {
         try {
+            return $this->successResponse();
             $validator = Validator::make($request->all(), [
                 'name' => ['required', 'string'],
                 'email' => ['required', 'email'],
-                'message' => ['required', 'min:8', 'string'],
+                'message' => ['required', 'min:20', 'string'],
             ]);
 
             if ($validator->fails()) {
@@ -29,6 +30,7 @@ class HomeController extends Controller
 
             $contact = Contact::firstOrCreate($request->only(['email']));
             $contactMessage = ContactMessage::create($request->only(['email, message']));
+            $contactMessage->contact()->save($contact);
 
             $mail = new ContactMessageMail($contactMessage);
             dispatch(new SendEmail($mail, env('MAIL_TO_ADDRESS')));

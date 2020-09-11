@@ -15,6 +15,8 @@ class CreateContactMessagesTable extends Migration
     {
         Schema::create('contact_messages', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger("contact_id")->nullable();
+            $table->string("message");
             $table->timestamps();
         });
     }

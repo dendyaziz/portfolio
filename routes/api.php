@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('send_message', 'HomeController@sendMessage');
 
 Route::prefix('auth')->group(function () {
 
@@ -36,7 +33,10 @@ Route::prefix('auth')->group(function () {
 });
 
 Route::group(['middleware' => 'auth:api'], function(){
+    Route::get('users', 'UserController@index')->middleware('isSuperAdmin');
+
     // Users
+    Route::get('user', 'UserController@user');
     Route::get('users', 'UserController@index')->middleware('isSuperAdmin');
     Route::get('users/{id}', 'UserController@show')->middleware('isMaster');
 });
